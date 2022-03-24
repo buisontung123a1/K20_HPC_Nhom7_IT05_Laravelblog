@@ -25,4 +25,3 @@ Route::get('/index1', function () {
 Route::get('/pages-misc-error', function () {
     return view('pages-misc-error');
 }) ->name('admin.pages-misc-error');
-
