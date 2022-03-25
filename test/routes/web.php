@@ -19,12 +19,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/tables-basic', function () {
+
+Route::get('/auth-register-basic', [Mycontroller::class, 'register']);
+Route::get('/auth-forgot-password-basic', [Mycontroller::class, 'forgotpassword']);
+Route::get('/cards-basic', [Mycontroller::class, 'cards']);
+Route::get('/dashboard', [Mycontroller::class, 'dashboard']);
+Route::get('/pages-account-settings-account', [Mycontroller::class, 'account']);
+Route::get('/pages-account-settings-connections', [Mycontroller::class, 'connections']);
+Route::get('/pages-account-settings-notifications', [Mycontroller::class, 'notifications']);
+Route::get('/pages-misc-error', [Mycontroller::class, 'error']);
+Route::get('/pages-misc-under-maintenance', [Mycontroller::class, 'maintenance']);
+Route::get('/tables-basic', [Mycontroller::class, 'tables']);
+
+
+/*Route::get('/tables-basic', function () {
     return view('tables-basic');
 });
 Route::get('/dashboard', function () {
     return view('dashboard');
-}) -> name('index');
+});
 Route::get('/pages-misc-error', function () {
     return view('pages-misc-error');
 }) -> name('admin.pages-misc-error');
@@ -34,9 +47,9 @@ Route::get('/pages-misc-under-maintenance', function () {
 Route::get('/layouts-without-menu', function(){
     return view('layouts-without-menu');
 });
-/*Route::get('/auth-login-basic', function(){
+Route::get('/auth-login-basic', function(){
     return view('auth-login-basic');
-});*/
+});
 Route::get('/auth-register-basic', function(){
     return view('auth-register-basic');
 });
@@ -54,6 +67,4 @@ Route::get('/pages-account-settings-notifications', function(){
 });
 Route::get('/cards-basic', function(){
     return view('cards-basic');
-});
-
-Route::get('/auth-login-basic', [Mycontroller::class, 'login']);
+});*/
