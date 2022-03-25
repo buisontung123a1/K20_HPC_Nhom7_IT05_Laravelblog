@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Mycontroller;
 use App\Http\Middleware\adminlogin;
+use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,8 +22,8 @@ Route::get('/', function () {
 Route::get('/tables-basic', function () {
     return view('tables-basic');
 });
-Route::get('/index1', function () {
-    return view('index1');
+Route::get('/dashboard', function () {
+    return view('dashboard');
 }) -> name('index');
 Route::get('/pages-misc-error', function () {
     return view('pages-misc-error');
@@ -32,9 +34,9 @@ Route::get('/pages-misc-under-maintenance', function () {
 Route::get('/layouts-without-menu', function(){
     return view('layouts-without-menu');
 });
-Route::get('/auth-login-basic', function(){
+/*Route::get('/auth-login-basic', function(){
     return view('auth-login-basic');
-});
+});*/
 Route::get('/auth-register-basic', function(){
     return view('auth-register-basic');
 });
@@ -53,3 +55,5 @@ Route::get('/pages-account-settings-notifications', function(){
 Route::get('/cards-basic', function(){
     return view('cards-basic');
 });
+
+Route::get('/auth-login-basic', [Mycontroller::class, 'login']);

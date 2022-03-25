@@ -75,7 +75,7 @@
             <div class="card-body">
               <!-- Logo -->
               <div class="app-brand justify-content-center">
-                <a href="index1" class="app-brand-link gap-2">
+                <a href="dashboard" class="app-brand-link gap-2">
                   <span class="app-brand-logo demo">
                     <svg
                       width="25"
@@ -137,7 +137,7 @@
               <!-- /Logo -->
               <h4 class="mb-2">Forgot Password? 🔒</h4>
               <p class="mb-4">Enter your email and we'll send you instructions to reset your password</p>
-              <form id="formAuthentication" class="mb-3" action="index1" method="POST">
+              <form id="formAuthentication" class="mb-3" action="dashboard" method="POST">
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
                   <input
