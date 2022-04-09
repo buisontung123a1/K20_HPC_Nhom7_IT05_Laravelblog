@@ -27,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Error - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Under Maintenance - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
 
     <meta name="description" content="" />
 
@@ -67,25 +67,25 @@
   <body>
     <!-- Content -->
 
-    <!-- Error -->
+    <!--Under Maintenance -->
     <div class="container-xxl container-p-y">
       <div class="misc-wrapper">
-        <h2 class="mb-2 mx-2">Page Not Found :(</h2>
-        <p class="mb-4 mx-2">Oops! 😖 The requested URL was not found on this server.</p>
+        <h2 class="mb-2 mx-2">Under Maintenance!</h2>
+        <p class="mb-4 mx-2">Sorry for the inconvenience but we're performing some maintenance at the moment</p>
         <a href="dashboard" class="btn btn-primary">Back to home</a>
-        <div class="mt-3">
+        <div class="mt-4">
           <img
-            src="../assets/img/illustrations/page-misc-error-light.png"
-            alt="page-misc-error-light"
+            src="../assets/img/illustrations/girl-doing-yoga-light.png"
+            alt="girl-doing-yoga-light"
             width="500"
             class="img-fluid"
-            data-app-dark-img="illustrations/page-misc-error-dark.png"
-            data-app-light-img="illustrations/page-misc-error-light.png"
+            data-app-dark-img="illustrations/girl-doing-yoga-dark.png"
+            data-app-light-img="illustrations/girl-doing-yoga-light.png"
           />
         </div>
       </div>
     </div>
-    <!-- /Error -->
+    <!-- /Under Maintenance -->
 
     <!-- / Content -->
 
